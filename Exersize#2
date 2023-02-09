@@ -1,4 +1,4 @@
 first= input('enter a number: ')
 Second= input('enter another number: ')
-sum = int(first)+int(Second)
+sum = float(first)+float(Second)
 print(f'sum: {sum}')
