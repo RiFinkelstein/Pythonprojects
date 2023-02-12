@@ -6,7 +6,7 @@ def unique_english_letters(word):
     for letter in letters:
         if letter in word:
             count += 1
-    return count
+    print(f"there are {count} unique letters")
 
 
-print(unique_english_letters("mississippi"))
+print(unique_english_letters(input("enter a word: ")))
