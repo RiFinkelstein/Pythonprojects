@@ -3,7 +3,6 @@ def count_char_x(word, x):
     for letter in word:
         if letter == x:
             count += 1
-    return count
-
+    print(f"there are {count} {x}'s in the word {word}")
 
 print(count_char_x("mississippi", "s"))
