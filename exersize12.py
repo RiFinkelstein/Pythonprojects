@@ -1,6 +1,7 @@
 #most used charachter in sentance
 # can change to userinput
-sentance = "the ig black dog ran over the moon"
+sentance = "the big black dog ran over the moon"
+no_space= sentance.strip()
 charachter_frequency = {}
 for charachter in sentance:
     if charachter in charachter_frequency:
