@@ -1,5 +1,5 @@
 import sys
-number = 12
+number = int(input("enter a number: "))
 prime = False
 if number > 0:
     for x in range(2, number-1):
