@@ -7,7 +7,7 @@ if number > 0:
             continue
         elif number % x == 0:
             sys.exit("your number is not prime")
-        sys.exit("the number is prime")
+    sys.exit("the number is prime")
 if number == 0:
     sys.exit("your numebr is not prime")
 else:
