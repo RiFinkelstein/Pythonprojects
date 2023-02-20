@@ -1,18 +1,18 @@
 import random
 import time
 
-
 roll_again = "yes"
 
 while roll_again == "yes":
-    print("\nrolling te dice...")
+    print("\n Rolling the dice...")
     time.sleep(1)
     dice_one = random.randint(1, 6)
     dice_two = random.randint(1, 6)
     print(
-        f"the numbers you have rolled are: \n dice 1: {dice_one} \n dice 2: {dice_two}")
+        f"The numbers you have rolled are:\nDice 1: {dice_one}\nDice 2: {dice_two}")
     if dice_one == dice_two:
-        print("sorry, try again!")
+        print("Sorry, try again!")
     else:
-        print("yayyy you win")
-    roll_again = input("do you want to play again?: ")
+        print("Yayyy you win!")
+    roll_again = input(
+        "Do you want to play again? (Enter 'yes' to continue): ").lower()
