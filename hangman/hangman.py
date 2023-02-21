@@ -1,7 +1,6 @@
 import random
+from words import word_list
 
-# list of words to choose from
-words = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape']
 
 # pick a random word from the list
 word = random.choice(words)
@@ -40,7 +39,7 @@ while current_guesses < max_guesses:
     if guess in word:
         print('Correct!')
         if all(letter in letters_guessed for letter in word):
-            print('You win!')
+            print(f'You win! \n the word was {word}')
             break
     else:
         print('Incorrect.')
@@ -48,4 +47,4 @@ while current_guesses < max_guesses:
     
 # end of game loop
 if current_guesses == max_guesses:
-    print('You lose. The word was', word)
+    print('You lose. \n The word was', word)
