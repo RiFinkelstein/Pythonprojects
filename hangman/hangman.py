@@ -4,7 +4,7 @@ from stages import hangman_stages
 
 
 # pick a random word from the list
-word = random.choice(words)
+word = random.choice(word_list)
 
 # set up the game
 max_guesses = 6
