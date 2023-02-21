@@ -1,5 +1,6 @@
 import random
 from words import word_list
+from stages import hangman_stages
 
 
 # pick a random word from the list
@@ -12,6 +13,8 @@ letters_guessed = []
 
 # game loop
 while current_guesses < max_guesses:
+    # display the current state of the hangman
+    print(hangman_stages[current_guesses])
     # display the current state of the word
     display_word = ''
     for letter in word:
@@ -47,4 +50,5 @@ while current_guesses < max_guesses:
     
 # end of game loop
 if current_guesses == max_guesses:
+    print(hangman_stages[current_guesses])
     print('You lose. \n The word was', word)
