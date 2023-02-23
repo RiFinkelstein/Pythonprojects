@@ -1,32 +1,37 @@
 print("welcome to my quiz!")
 
-playing = input("do you want to play? ")
-score = 0
-if playing != "yes":
-    quit()
+while True:
+    playing = input("do you want to play? ")
+    if playing.lower() != "yes":
+        break
 
-print("okay! lets play:)")
+    print("okay! let's play :)")
 
-answer = input("what is my full name? ").lower()
-if answer == "rivka finkelstein":
-    print('correct!')
-    score += 1
-else:
-    print("incorrect")
+    score = 0
+    answer = input("what is my full name? ").lower()
+    if answer == "rivka finkelstein":
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
 
-answer = input("What month was I born in ").lower()
-if answer == "july":
-    print('correct!')
-    score += 1
-else:
-    print("incorrect")
+    answer = input("What month was I born in? ").lower()
+    if answer == "july":
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
 
-answer = input("Where did i grow up? ").lower()
-if answer == "woodmere":
-    print('correct!')
-    score += 1
-else:
-    print("incorrect")
+    answer = input("Where did I grow up? ").lower()
+    if answer == "woodmere":
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
 
+    if score < 2:
+        print(f"sorry! you got {score}/3 correct")
+    else:
+        print(f"you got {score}/3 correct!!")
 
-print(f"you got {score}/3 correct!!")
+print("Thanks for playing!")
