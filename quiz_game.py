@@ -33,5 +33,7 @@ while True:
         print(f"sorry! you got {score}/3 correct")
     else:
         print(f"you got {score}/3 correct!!")
-
+    play_again = input("Do you want to play again? ")
+    if play_again.lower() != "yes":
+        break
 print("Thanks for playing!")
