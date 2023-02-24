@@ -8,22 +8,70 @@ while True:
     print("okay! let's play :)")
 
     score = 0
-    answer = input("what is my full name? ").lower()
-    if answer == "rivka finkelstein":
+    answer = input(
+        "What year was the Declaration of Independence signed? ").lower()
+    if answer == "1776":
         print('correct!')
         score += 1
     else:
         print("incorrect")
 
-    answer = input("What month was I born in? ").lower()
-    if answer == "july":
+    answer = input(
+        "Who was the first president of the United States? ").lower()
+    if answer == "George Washington".lower():
         print('correct!')
         score += 1
     else:
         print("incorrect")
 
-    answer = input("Where did I grow up? ").lower()
-    if answer == "woodmere":
+    answer = input("Which state is known as the \"Sunshine State\"? ").lower()
+    if answer == "Florida".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+
+    answer = input("What is the tallest mountain in North America? ").lower()
+    if answer == "Denali".lower() or "Mount McKinley".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+    answer = input("What is the capital of California? ").lower()
+    if answer == "Sacramento".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+    answer = input(
+        "Which US state is known as the \"Lone Star State\"? ").lower()
+    if answer == "Texas".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+    answer = input("Who wrote the Star-Spangled Banner? ").lower()
+    if answer == "Francis Scott Key".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+        answer = input(
+            "Which US city is known as the \"Windy City\"? ").lower()
+    if answer == "Chicago".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+        answer = input("Who invented the telephone? ").lower()
+    if answer == "Alexander Graham Bell".lower():
+        print('correct!')
+        score += 1
+    else:
+        print("incorrect")
+        answer = input(
+            "What is the name of the river that flows through the Grand Canyon? ").lower()
+    if answer == "Colorado River".lower():
         print('correct!')
         score += 1
     else:
