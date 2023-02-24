@@ -60,7 +60,9 @@ while True:
         countdown(5)
 
         # get answer and check if correct
-        user_answer = input().strip()
+        print("Time's up!")
+        print(f"The correct answer was: {answer}")
+        user_answer = input("Please enter your answer: ").strip()
         print(f"Your answer: {user_answer}")
         if user_answer.lower() == answer.lower():
             print("Correct!")
