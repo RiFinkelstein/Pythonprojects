@@ -28,6 +28,14 @@ while True:
         score += 1
     else:
         print("incorrect")
+         percentage_score = (score / 3) * 100
+    if percentage_score < 60:
+        print(f"Sorry! You got {score}/3 correct ({percentage_score:.2f}%). Better luck next time!")
+    elif percentage_score >= 60 and percentage_score < 80:
+        print(f"Congratulations! You got {score}/3 correct ({percentage_score:.2f}%). Good job!")
+    else:
+        print(f"Excellent work! You got {score}/3 correct ({percentage_score:.2f}%). Well done!")
+
 
     if score < 2:
         print(f"sorry! you got {score}/3 correct")
