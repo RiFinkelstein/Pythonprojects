@@ -1,5 +1,3 @@
-import time
-
 print("Welcome to my quiz!")
 
 while True:
@@ -11,15 +9,6 @@ while True:
 
     score = 0
     num_questions = 10
-
-    # define a function for countdown timer
-    def countdown(t):
-        while t:
-            mins, secs = divmod(t, 60)
-            timer = '{:02d}:{:02d}'.format(mins, secs)
-            print(timer, end="\r")
-            time.sleep(1)
-            t -= 1
 
     for i in range(num_questions):
         # ask question
@@ -56,14 +45,8 @@ while True:
 
         print(f"Question {i+1}: {question}")
 
-        # start countdown timer
-        countdown(5)
-
         # get answer and check if correct
-        print("Time's up!")
-        print(f"The correct answer was: {answer}")
-        user_answer = input("Please enter your answer: ").strip()
-        print(f"Your answer: {user_answer}")
+        user_answer = input().strip()
         if user_answer.lower() == answer.lower():
             print("Correct!")
             score += 1
