@@ -52,6 +52,7 @@ while True:
             score += 1
         else:
             print("Incorrect.")
+            print(f"The correct answer is {answer}")
 
     percentage_score = (score / num_questions) * 100
 
