@@ -1,3 +1,5 @@
+import time
+
 print("Welcome to my quiz!")
 
 while True:
@@ -9,6 +11,7 @@ while True:
 
     score = 0
     num_questions = 10
+    timer_duration = 5
 
     for i in range(num_questions):
         # ask question
@@ -45,14 +48,21 @@ while True:
 
         print(f"Question {i+1}: {question}")
 
-        # get answer and check if correct
-        user_answer = input().strip()
+        # start countdown timer
+        start_time = time.time()
+        elapsed_time = 0
+        while elapsed_time < timer_duration:
+            time_left = timer_duration - elapsed_time
+            print(f"Time left: {time_left} seconds")
+            user_answer = input()
+            elapsed_time = time.time() - start_time
+
+        # check if user answer is correct
         if user_answer.lower() == answer.lower():
             print("Correct!")
             score += 1
         else:
             print("Incorrect.")
-            print(f"The correct answer is {answer}")
 
     percentage_score = (score / num_questions) * 100
 
