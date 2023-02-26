@@ -4,4 +4,5 @@ list_c = []
 for i in list_a:
     if i not in list_c:
         list_c.append(i)
+    list.sort(list_c)
 print(list_c)
