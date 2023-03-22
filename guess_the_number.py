@@ -7,8 +7,12 @@ while True:
 	guess = int(input("Guess a number between 1 and 9: "))
 	if guess== number:
 		break
-	elif guess >1 and guess<9:
+	elif guess >=1 and guess<=9:
 		number_of_guesses += 1
+		if guess > number:
+            		print("Try again, a little lower.")
+        	elif guess < number:
+            		print("Try again, a little higher.")
 	elif guess<1 or guess>9:
 		print("choose a number between 1 and 9")
 
