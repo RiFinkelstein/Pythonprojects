@@ -14,6 +14,6 @@ while True:
         	elif guess < number:
             		print("Try again, a little higher.")
 	elif guess<1 or guess>9:
-		print("choose a number between 1 and 9")
+		print("invalid input. please choose a number between 1 and 9")
 
 print(f"You needed {number_of_guesses} guesses to guess the number {number}")
