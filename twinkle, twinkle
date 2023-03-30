@@ -1,0 +1,14 @@
+#twinkle twinkle in a specific format
+string = "Twinkle, twinkle, little star, How I wonder what you are! Up above the world so high, Like a diamond in the sky. Twinkle, twinkle, little star, How I wonder what you are"
+
+# split the string by the period (.)
+sentences = string.split(". ")
+
+# loop through each sentence and print with appropriate indentation
+for i, sentence in enumerate(sentences):
+    if i == len(sentences) - 1:
+        # last sentence doesn't end with period
+        print(sentence)
+    else:
+        print(sentence + ".")
+    print("\t" * i, end="")
