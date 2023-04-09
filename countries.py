@@ -26,3 +26,7 @@ countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua 
              "Yemen", 
              "Zambia", "Zimbabwe"
              ] 
+letter = input("Enter the letter to filter by: ")
+filtered_countries = [country for country in countries if country.startswith(letter.upper())]
+print(f"Countries starting with '{letter.upper()}':")
+print(filtered_countries)
