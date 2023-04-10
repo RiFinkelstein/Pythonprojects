@@ -1,1 +1,2 @@
-# Pythonprojects
+# Python Exercises Repository
+This repository contains a collection of random Python exercises that I have used to help me improve your coding skills. I have found exersizes online and done them so I can learn more and improve my python skills. The exercises cover a wide range of topics, including basic Python syntax, data structures, control flow, functions, object-oriented programming, file handling, and more.
