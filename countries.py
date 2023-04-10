@@ -34,4 +34,4 @@ if filter_letter.lower() == 'y':
     print(filtered_countries)
 else:
     print("All countries:")
-    print(countries    
+    print(countries)   
