@@ -25,13 +25,15 @@ countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua 
              "Zambia", "Zimbabwe"
              ] 
 filter_letter = input("Do you want to filter countries by starting letter? (y/n/q): ")
-while filter_letter.lower() == 'y':
-    letter = input("Enter the letter to filter by: ")
-    filtered_countries = [country for country in countries if country.startswith(letter.upper())]
-    print(f"Countries starting with '{letter.upper()}':")
-    print(filtered_countries)
-if filter_letter.lower() == 'n':
-    print("All countries:")
-    print(countries) 
-else:
-  quit
+while filter_letter.lower() != 'quit':
+    if filter_letter.lower() == 'y':
+        letter = input("Enter the letter to filter by: ")
+        filtered_countries = [country for country in countries if country.startswith(letter.upper())]
+        print(f"Countries starting with '{letter.upper()}':")
+        print(filtered_countries)
+    elif filter_letter.lower() == 'n':
+        print("All countries:")
+        print(countries) 
+    else:
+        print("Invalid input. Please enter 'y' to filter by letter, 'n' to show all countries, or 'quit' to quit.")
+    filter_letter = input("Do you want to filter countries by starting letter or quit? (y/n/quit): ")
