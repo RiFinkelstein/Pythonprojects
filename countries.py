@@ -24,12 +24,14 @@ countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua 
              "Yemen", 
              "Zambia", "Zimbabwe"
              ] 
-filter_letter = input("Do you want to filter countries by starting letter? (y/n): ")
+filter_letter = input("Do you want to filter countries by starting letter? (y/n/q): ")
 if filter_letter.lower() == 'y':
     letter = input("Enter the letter to filter by: ")
     filtered_countries = [country for country in countries if country.startswith(letter.upper())]
     print(f"Countries starting with '{letter.upper()}':")
     print(filtered_countries)
-else:
+if filter_letter.lower() == 'n':
     print("All countries:")
-    print(countries)   
+    print(countries) 
+else:
+  quit
